@@ -19,7 +19,8 @@ int main() {
     while (numero >= 2) {
         numero -= 2; 
     }
-    
+    //aqui el numero ya no vale lo mismo que al inicio, ahora fue restado por dos n veces
+    //si el numero termino siendo 0 , entonces es par , si el numero no es 0, entonces es impar
     if (numero == 0) {
         printf("El numero %d es par.\n", numero);
     } else {
