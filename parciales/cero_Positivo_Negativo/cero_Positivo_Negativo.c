@@ -6,6 +6,41 @@
 
 int main(){
 
+    // declaramos una variable para almacenar el número ingresado por el usuario
+    int n1;
+    
+    //le pido un numero al usuario 
+    printf("Ingrese un numero: ");
+    scanf("%d", &n1);
+
+    // verificamos si el número es positivo, cero o negativo
+    if(n1 >= 0){
+        if(n1 == 0){
+            printf("el numero es cero");
+        }else{
+            printf("el numero es positivo");
+        }
+    }else {
+        printf("el numero es negativo");
+    }
+    
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+/*
+
+#include <stdio.h>
+
+int main(){
+
     // Declaramos una variable flotante para almacenar el primer número ingresado por el usuario
     float n1;
     
@@ -42,3 +77,4 @@ int main(){
 
 }
 
+*/
