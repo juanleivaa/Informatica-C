@@ -1,4 +1,39 @@
 //ingresar un numero natural y presentar por pantalla si el numero es par , no puede usar ni mod ni div 
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    // do-while para asegurarse de que el número ingresado sea natural (mayor o igual a 0)
+    do {
+        printf("Ingrese un numero natural (>= 0): ");
+        scanf("%d", &numero);
+
+        if (numero < 0) {
+            printf("El numero ingresado no es natural, intente nuevamente.\n");
+        }
+    } while (numero < 0);  // Si el número no es natural, sigue pidiendo un nuevo número.
+
+    // Comprobacion para ver si el numero es par;
+    // Mientras que el numero sea mayor o igual a 2, ir restandole de 2 en 2 sucesivamente.
+    int temp = numero;  // Usamos una variable temporal para no modificar el valor original de `numero`
+    while (temp >= 2) {
+        temp -= 2; 
+    }
+
+    // Si el numero termino siendo 0 , entonces es par, si no es 0, entonces es impar.
+    if (temp == 0) {
+        printf("El numero %d es par.\n", numero);
+    } else {
+        printf("El numero %d es impar.\n", numero);
+    }
+
+    return 0;
+}
+
+
+/*
 #include <stdio.h>
 
 int main() {
@@ -29,3 +64,4 @@ int main() {
 
     return 0;
 }
+*/
